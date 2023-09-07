@@ -17,7 +17,7 @@ INSERT INTO program (name, school_id) VALUES
 ('Programa de Literatura', 2),
 ('Programa de Arte', 2);
 
-INSERT INTO user (doc_id, doc_type, name, lastname, email) VALUES
+INSERT INTO users (doc_id, doc_type, name, lastname, email) VALUES
 (1, 'DNI', 'Juan', 'Pérez', 'juan@example.com'),
 (2, 'Carnet', 'María', 'González', 'maria@example.com'),
 (3, 'DNI', 'Carlos', 'López', 'carlos@example.com'),
@@ -81,7 +81,9 @@ INSERT INTO editorial (name) VALUES
 ('Daily'),
 ('Venecia news');
 
-INSERT INTO book (isbn, name, page_number, published_year, author_id, editorial_id, category_id) VALUES
+INSERT INTO library (name) values ('Biblioteca españa');
+
+INSERT INTO book (isbn, name, page_number, published_year, author_id, editorial_id, category_id,library_id) VALUES
 (9780156196253, 'Animal Farm', 112, '1945-08-17', 1, 1, 1,1),
 (9780439554930, 'Harry Potter and the Sorcerer''s Stone', 320, '1997-06-26', 2, 2, 1,1),
 (9780439554893, 'Harry Potter and the Chamber of Secrets', 352, '1998-07-02', 2, 2, 1,1),
@@ -92,4 +94,3 @@ INSERT INTO book (isbn, name, page_number, published_year, author_id, editorial_
 (9780451169525, 'The Shining', 464, '1977-01-28', 4, 1, 4,1),
 (9780141439518, 'Pride and Prejudice', 432, '1813-01-28', 5, 2, 5,1),
 (9781612930831, 'Sense and Sensibility', 328, '1811-10-30', 5, 1, 5,1);
-
